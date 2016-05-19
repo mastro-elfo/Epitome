@@ -59,7 +59,7 @@
 					self = this;
 
 				if (!events && !subs) return this;
-				args = Array.from(args);
+				args = Array.convert(args||[]);
 
 				events.each(function(fn){
 					// local events
